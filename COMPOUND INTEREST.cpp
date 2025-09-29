@@ -3,6 +3,7 @@ NAME:KABARU ALLAN KAMAU
 REG NO:PA106/G/28220/25
 DESCRIPTION:COMPOUND INTERREST
 */
+#include<math.h>
 #include<stdio.h>
 int main()
 {
@@ -20,10 +21,12 @@ int main()
 	
 	printf("\nenter the number of time compounded per year:");
 	scanf("%d",&n);
-	
+
+	rate=rate/100;
 	amount=principle*pow((1+rate/n),n*time);
 	
 	printf("\n amount(in Ksh),%.21f",amount);
 	
 	return 0;
 }
+
