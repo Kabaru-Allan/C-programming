@@ -7,14 +7,16 @@ Description:FORMULAE FOR EVALUATION IN A CYLINDER
 #include<stdio.h>
 int main ()
 {
-	double radius,height,pi,volume,surfacearea;
+	double pi,volume,surfacearea;
+    int radius,height;
 	
 	printf("\nEnter the radius of the cylinder:");
-	scanf("%1f",&radius);
+	scanf("%d",&radius);
 	
 	printf("\nEnter the heigt of the cylinder:");
-	scanf("%1f",&height);
-	
+	scanf("%d",&height);
+
+	pi=22/7;
 	volume=pi*radius*radius*height;
 	surfacearea=(2*pi*radius*radius)+(2*pi*radius*height);
 	
@@ -22,4 +24,5 @@ int main ()
 	printf("surfacearea of the cylinder:%.21f\n",surfacearea);
 	
 	return 0;
+
 }
